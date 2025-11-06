@@ -63,6 +63,3 @@ Electronics,3200
   ```
 
   And update `docker-compose.yml` to use `build: .` and (optionally) remove the `/app` bind mount if you COPY code into the image.
-
-```
-```
