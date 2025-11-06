@@ -1,0 +1,9 @@
+services:
+  spark:
+    image: spark:3.5.1-python3
+    container_name: simple-etl
+    working_dir: /app
+    volumes:
+      - ./app:/app
+      - ./data:/data
+    command: ["/opt/spark/bin/spark-submit", "--master", "local[*]", "/app/etl.py"]
